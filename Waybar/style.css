@@ -1,0 +1,60 @@
+* {
+    font-family: "Inter", "Font Awesome 6 Free";
+    font-size: 14px;
+    letter-spacing: .75px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(64, 73, 91, 0.75); 
+    color: #d1e5fe; 
+    border-bottom: 1px solid #E8B7D4;
+    padding-right: 20px;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    color: #E8B7D4; 
+    margin: 0 2px;
+    background: transparent;
+    border-radius: 6px;
+}
+
+#workspaces button.active {
+    color: #ffffff; 
+    background: rgba(128, 175, 255, 0.375); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+#workspaces button:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#clock, #cpu, #network, #pulseaudio, #tray {
+    padding: 0 8px;
+    margin: 0 2px;
+}
+
+#network.disconnected {
+    color: #FF99C8; 
+}
+#clock {
+    font-size: 20px; 
+    font-weight: 700;
+}
+#custom-spacer {
+    min-width: 10px;
+}
+#custom-audiovisualizer {
+    background: rgba(128, 175, 255, 0.15);
+    border-left: 1px solid #E8B7D4;
+    border-right: 1px solid #E8B7D4;
+    border-radius: 3px;
+    padding: 1px 4px;  
+    margin-left: 200px;
+    font-size: 20px;
+    color: #A8CFFF;
+    box-shadow: 0 0 4px rgba(128, 175, 255, 0.3);
+}
+#modules-left {
+    margin-left: 20px;
+}

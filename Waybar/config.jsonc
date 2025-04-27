@@ -1,1 +1,79 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 35,
+    "spacing": 5,
+    "modules-left": ["hyprland/workspaces", "custom/audiovisualizer", "custom/spacer"],
+    "modules-center": ["custom/center-spacer", "clock"],
+    "modules-right": ["pulseaudio", "network", "cpu", "custom/trayspacer", "tray", "custom/spacer"],
 
+    "custom/audiovisualizer": {
+        "format": "{}",
+        "exec": "/home/ginsan/.config/waybar/cava-wrapper.sh",
+        "interval": 0.02,
+        "tooltip": false,
+        "min-length": 15,
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    },
+
+    "custom/center-spacer": {
+        "format": " ",
+        "min-length": 0,
+        "tooltip": false
+    },
+    "custom/trayspacer": {
+        "format": " ",
+        "min-length": 3,
+        "tooltip": false
+    },
+    "custom/spacer": {
+        "format": " ",
+        "min-length": 7,
+        "tooltip": false
+    },
+
+    "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "activate",
+    "active-only": false,
+    "all-outputs": false,
+    "format-icons": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "11": "6",
+        "12": "7",
+        "13": "8",
+        "14": "9",
+        "15": "10"
+    },
+    "persistent-workspaces": {
+        "DP-1": [1, 2, 3, 4, 5],
+        "DP-3": [11, 12, 13, 14, 15]
+    }
+    },
+
+    "cpu": {
+        "interval": 5,
+        "format": " {usage}%"
+    },
+
+    "network": {
+        "format-ethernet": "",
+        "format-disconnected": "⚠ No Network"
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "Muted",
+        "format-icons": [" ", " "],
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    },
+
+    "tray": {
+        "spacing": 10,
+        "icon-size": 18
+    }
+}
