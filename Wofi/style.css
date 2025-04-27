@@ -1,0 +1,46 @@
+* {
+    font-family: "Hack Nerd Font Mono", "Font Awesome 6 Free", "JetBrains Mono";
+    font-size: 14px;
+    font-weight: 600;
+    color: #F5F6FF;
+    background: transparent;
+}
+
+window {
+    margin: 5px;
+    border: 2px solid #E8B7D4;
+    background-color: rgba(64, 73, 91, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 0 6px rgba(128, 175, 255, 0.25);
+}
+
+#input {
+    margin: 12px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    background-color: rgba(128, 175, 255, 0.12);
+    border: 1px solid rgba(128, 175, 255, 0.3);
+    color: #E8B7D4;
+}
+
+#entry {
+    padding: 4px 8px;
+    margin: 4px 6px;
+    border-radius: 4px;
+    text-transform: none;
+}
+
+#entry:selected {
+    background-color: rgba(128, 175, 255, 0.25);
+    color: #F5F6FF;
+}
+
+#scroll {
+    margin: 4px;
+}
+
+#img {
+    margin-right: 8px;
+    min-width: 18px;
+    min-height: 18px;
+}

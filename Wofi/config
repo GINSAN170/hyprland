@@ -1,1 +1,14 @@
+show=drun
+prompt=Search...
+insensitive=true
+allow_images=true
 
+width=500
+height=250
+location=center
+orientation=vertical
+lines=10
+columns=1
+
+key_expand=Tab
+key_exit=Escape
