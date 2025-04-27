@@ -1,4 +1,4 @@
-
+### Audio Visualizer ###
 BLOCKS=("▂" "▂" "▃" "▃" "▄" "▄" "▆" "▆" "█")
 
 cava -p ~/.config/cava/cava.conf | while IFS= read -r line; do
