@@ -1,0 +1,84 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "auto",
+        "source": "~/.config/fastfetch/nixLogo.png",
+        "height": 15,
+        "width": 30,
+        "padding": {
+            "top": 1,
+            "left": 2,
+	    "bottom": 2
+        }
+    },
+    "modules": [
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[38;5;218m┌──────────────────────Hardware──────────────────────┐"
+        },
+        {
+            "type": "cpu",
+            "key": "│ cpu",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "gpu",
+            "key": "│ gpu",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "memory",
+            "key": "│ ram",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "disk",
+            "key": "│ disk",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[38;5;218m└────────────────────────────────────────────────────┘"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[38;5;218m┌──────────────────────Software──────────────────────┐"
+        },
+        {
+            "type": "os",
+            "key": "│ os",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "kernel",
+            "key": "│ kernel",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "packages",
+            "key": "│ packages",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "shell",
+            "key": "│ shell",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "wm",
+            "key": "│ wm",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "terminal",
+            "key": "│ terminal",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[38;5;218m└────────────────────────────────────────────────────┘"
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 * {
-    font-family: "Hack Nerd Font Mono", "Font Awesome 6 Free", "JetBrains Mono";
+    font-family: "Inter", "Font Awesome 6 Free", "JetBrains Mono";
     font-size: 14px;
     font-weight: 600;
     color: #F5F6FF;
@@ -8,9 +8,9 @@
 
 window {
     margin: 5px;
-    border: 2px solid #E8B7D4;
+    border: 1px solid #E8B7D4;
+    border-radius: 25px;
     background-color: rgba(64, 73, 91, 0.5);
-    border-radius: 15px;
     box-shadow: 0 0 6px rgba(128, 175, 255, 0.25);
 }
 
